@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 18px;
 }
 
 main {
@@ -17,7 +19,7 @@ body {
     width: 375px;
     background-color: #F4F4F4;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 header {
@@ -27,20 +29,16 @@ header {
 
 h1 {
     color: #F4F4F4;
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 18px;
     text-align: center;
     padding: 25px;
 }
 
 label {
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
-    color: #777777;
+    color: #555555;
 }
 
 select {
@@ -49,9 +47,88 @@ select {
     border-radius: 4px;
     height: 48px;
     width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
     display: block;
     cursor: pointer;
     outline: none;
     appearance: none;
     padding-left: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    margin-top: 6px;
+    margin-bottom: 24px;
+}
+
+option {
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    outline: none;
+}
+
+button {
+    background: #1B83E2;
+    border-radius: 25px;
+    height: 48px;
+    width: 100%;
+    border: none;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F4F4F4;
+    cursor: pointer;
+    margin-top: 24px;
+    margin-bottom: 36px;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.7;
+    color: yellow;
+}
+
+section {
+    border: 1px solid #1B83E2;
+    border-radius: 4px;
+    
+}
+
+.info {
+    text-align: center;
+    padding: 10px;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+.value{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    color: #1B83E2;
+}
+
+.img {
+
 }
