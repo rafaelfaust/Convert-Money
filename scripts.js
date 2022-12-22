@@ -1,7 +1,7 @@
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 const dolar = 5.19
-const euro = 5.5
+const euro = 5.49
 const Bticoin = 0.000012
 
 convertValues = () => {
@@ -21,10 +21,10 @@ convertValues = () => {
     else if (select.value === '€ Euro' ) {
         converterValueText.innerHTML = new Intl.NumberFormat('de-DE',
             { style: 'currency', currency: 'EUR' }
-        ).format(input / dolar);
+        ).format(input / euro);
     }
     else {
-        converterValueText.innerHTML = input / Bticoin
+        converterValueText.innerHTML = Bticoin / input
     }
 }
 
