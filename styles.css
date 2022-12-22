@@ -12,18 +12,18 @@ main {
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #424141;
 }
 
 .container {
     width: 375px;
-    background-color: #F4F4F4;
+    background-color: #868585;
     margin: 0 auto;
     margin-top: 50px;
 }
 
 header {
-    background-color: #1B83E2;
+    background-color: #e2741b;
     height: 66px;
 }
 
@@ -38,7 +38,7 @@ h1 {
 label {
     font-weight: 400;
     font-size: 14px;
-    color: #555555;
+    color: #FFFFFF;
 }
 
 select {
@@ -81,7 +81,7 @@ input {
 }
 
 button {
-    background: #1B83E2;
+    background: #e2741b;
     border-radius: 25px;
     height: 48px;
     width: 100%;
@@ -106,7 +106,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #1B83E2;
+    border: 1px solid #e2741b;
     border-radius: 4px;
     
 }
@@ -119,14 +119,14 @@ section {
 .name{
     font-weight: 400;
     font-size: 14px;
-    color: #777777;
+    color: #FFFFFF;
 }
 
 .value{
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
-    color: #1B83E2;
+    color: #e2741b;
 }
 
 .img {
