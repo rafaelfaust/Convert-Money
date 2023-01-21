@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #e2741b;
+    background-color: #e4130c;
     height: 66px;
 }
 
@@ -81,7 +81,7 @@ input {
 }
 
 button {
-    background: #e2741b;
+    background: #e4130c;
     border-radius: 25px;
     height: 48px;
     width: 100%;
@@ -106,7 +106,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #e2741b;
+    border: 1px solid #e4130c;
     border-radius: 4px;
     
 }
@@ -126,9 +126,5 @@ section {
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
-    color: #e2741b;
-}
-
-.img {
-
+    color: #e4130c;
 }
