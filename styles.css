@@ -19,7 +19,8 @@ body {
     width: 375px;
     background-color: #868585;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5%;
+    height: 100%;
 }
 
 header {
@@ -92,7 +93,7 @@ button {
     color: #F4F4F4;
     cursor: pointer;
     margin-top: 24px;
-    margin-bottom: 36px;
+
 
 }
 
@@ -109,6 +110,11 @@ section {
     border: 1px solid #e4130c;
     border-radius: 4px;
     
+}
+
+.date {
+    text-align: center;
+    padding: 10px;
 }
 
 .info {

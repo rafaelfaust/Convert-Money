@@ -1,35 +1,42 @@
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 
-const data = fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then( response => response.json() )
 
 const convertValues = async () => {
     const input = document.getElementById('input-value').value
     const realValueText = document.getElementById('real-value-text')
     const converterValueText = document.getElementById('convert-value-text')
+    const dateText = document.getElementById('date-cot')
 
     const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then( response => response.json() )
 
     const dolar = data.USDBRL.high
+    const dolarDate = data.USDBRL.create_date
     const euro = data.EURBRL.high
+    const euroDate = data.EURBRL.create_date
     const Bticoin = data.BTCBRL.high
+    const BticoinDate = data.BTCBRL.create_date
+
 
     realValueText.innerHTML = new Intl.NumberFormat('pt-BR',
         { style: 'currency', currency: 'BRL' }
     ).format(input);
 
     if (select.value === 'US$ Dolar Americano') {
+        dateText.innerHTML = dolarDate
         converterValueText.innerHTML = new Intl.NumberFormat('en-US',
             { style: 'currency', currency: 'USD' }
         ).format(input / dolar);
     }
     else if (select.value === '€ Euro' ) {
+        dateText.innerHTML = euroDate
         converterValueText.innerHTML = new Intl.NumberFormat('de-DE',
             { style: 'currency', currency: 'EUR' }
         ).format(input / euro);
     }
     else {
-        converterValueText.innerHTML = Bticoin / input
+        dateText.innerHTML = BticoinDate
+        converterValueText.innerHTML = input / Bticoin
     }
 }
 
