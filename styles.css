@@ -13,27 +13,30 @@ main {
 
 body {
     background-color: #424141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     width: 375px;
     background-color: #868585;
-    margin: 0 auto;
-    margin-top: 5%;
-    height: 100%;
+
 }
 
 header {
     background-color: #e4130c;
     height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     color: #F4F4F4;
     font-weight: 400;
     font-size: 24px;
-    text-align: center;
-    padding: 25px;
 }
 
 label {
@@ -109,17 +112,25 @@ button:active {
 section {
     border: 1px solid #e4130c;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     
 }
 
 .date {
-    text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .info {
-    text-align: center;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
 }
 
 .name{
