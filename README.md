@@ -11,7 +11,7 @@ O projeto "Convert Money" é uma aplicação web desenvolvida com HTML, CSS e Ja
 
 ## Demo
 
-Você pode experimentar o aplicativo acessando [aqui](https://rafaelfaust.github.io/Convert-Money).
+Você pode experimentar o aplicativo acessando [aqui](https://conversor-rafael-faust.netlify.app/).
 
 ## Pré-requisitos
 
